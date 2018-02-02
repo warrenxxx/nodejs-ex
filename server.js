@@ -58,6 +58,7 @@ var initDb = function (callback) {
 };
 
 app.use('/api', route);
+/*
 app.get('/', function (req, res) {
     if (!db) {
         initDb(function (err) {
@@ -92,7 +93,7 @@ app.get('/pagecount', function (req, res) {
         res.send('{ pageCount: -1 }');
     }
 });
-
+*/
 // error handling
 app.use(function (err, req, res, next) {
     console.error(err.stack);

@@ -1,10 +1,9 @@
 'use strict'
-var express=require('express');
+var express=require('express'),
+    UserController=require('../controllers/user');
 
 var api=express.Router();
 
 
-api.get("/user",function (req,res) {
-    res.send({"ff":"ss"})
-});
+api.get("/user",UserController.save);
 module.exports=api
